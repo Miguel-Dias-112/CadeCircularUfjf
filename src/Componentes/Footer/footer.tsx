@@ -3,6 +3,8 @@ import './footer.css'
 import prevIcon from '../../../public/prevIcon.png'
 import rotasIcon from '../../../public/rotasIcon.png'
 import homeIcon from '../../../public/homeIcon.png'
+import chatIcon from '../../../public/chatIcon.png'
+
 function Footer() {
     const navigate = useNavigate();
 
@@ -20,6 +22,10 @@ function Footer() {
             <button onClick={()=>{handleClick('/CadeCircularUfjf/previsoes')}}>
                 <img  className = 'Footerimg'src={prevIcon}></img>
             </button>
+            <button onClick={()=>{handleClick('/CadeCircularUfjf/chat')}}>
+                <img  className = 'Footerimg'src={chatIcon}></img>
+            </button>
+
 
         </footer>
     )
